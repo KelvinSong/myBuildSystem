@@ -26,6 +26,7 @@ def run_unit_tests(project_path, report_path, lv_version, lv_bitness):
         "-OperationName", "RunUnitTests",
         "-ProjectPath", project_path,
         "-JUnitReportPath", report_path,
+        "-PortNumber", "3365",
     ]
     
     subprocess.call(["taskkill", "/IM", "labview.exe", "/F"])
